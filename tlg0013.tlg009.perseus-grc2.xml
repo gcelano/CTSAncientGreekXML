@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<text text-cts="urn:cts:greekLit:tlg0013.tlg009.perseus-grc2" file-name="" author="" title="Hymn 9 To Artemis Machine readable text" date-of-conversion="2017-03-08">
+  <t p="1" n="1" a="[1]">Ἄρτεμιν</t>
+  <t p="1" n="2" a="[1]">ὕμνει</t>
+  <t p="1" n="3" a="[1]" join="b">,</t>
+  <t p="1" n="4" a="[1]">Μοῦσα</t>
+  <t p="1" n="5" a="[2]" join="b">,</t>
+  <t p="1" n="6" a="[1]">κασιγνήτην</t>
+  <t p="1" n="7" a="[1]">Ἑκάτοιο</t>
+  <t p="1" n="8" a="[1]" join="b">.</t>
+  <t p="5" n="1" a="[1]">ἧσται</t>
+  <t p="5" n="2" a="[1]">μιμνάζων</t>
+  <t p="5" n="3" a="[1]">ἑκατηβόλον</t>
+  <t p="5" n="4" a="[1]">ἰοχέαιραν</t>
+  <t p="5" n="5" a="[1]" join="b">.</t>
+</text>

@@ -11,7 +11,7 @@ Each file contains the following information:
 * the @n attribute shows the running number id for each word (numeration starts again as the passage changes)
 * the text() of each t element contains the word form
 * the optional @join attribute specifies whether a punctuation mark should be attached to either the preceding (b) or the following (a) word.
-* the optional @tag element shows some special elements which contained the given word: more precisely, the add and del elements, which can be of interest to identify editorial interventions
+* the optional @tag element shows some special elements which contained the given word: more precisely, the add, del, unclear, surplus, supplied and seg elements, which can be of interest to identify editorial interventions
 
 # License
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.

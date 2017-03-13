@@ -158,7 +158,8 @@ declare function lp:punct-tokenize($path as xs:string?) as element()?
 {
  let $g := lp:space-tokenize($path)
  return
- <text text-cts="{$g/@text-cts}" file-name="{$g/@file-name}" author="{$g/@author}" title="{$g/@title}" date-of-conversion="{$g/@date-of-conversion}">
+ <text text-cts="{$g/@text-cts}" file-name="{$g/@file-name}" 
+  author="{$g/@author}" title="{$g/@title}" date-of-conversion="{$g/@date-of-conversion}">
  {
   for $t in $g//t
   let $o := $t/@tag
@@ -188,7 +189,8 @@ declare function lp:punct-tokenize($path as xs:string?) as element()?
  :)
 declare function lp:running-id-word($text as element()?) as element()?
 {
- <text text-cts="{$text/@text-cts}" file-name="{$text/@file-name}" author="{$text/@author}" title="{$text/@title}" date-of-conversion="{$text/@date-of-conversion}"> 
+ <text text-cts="{$text/@text-cts}" file-name="{$text/@file-name}" 
+  author="{$text/@author}" title="{$text/@title}" date-of-conversion="{$text/@date-of-conversion}"> 
  { 
   for tumbling window $w in $text/t
   start $s when true()
@@ -217,7 +219,8 @@ declare function lp:running-id-word($text as element()?) as element()?
  :)
 declare function lp:occurence-id-word($text as element()?) as element()?
 {
- <text text-cts="{$text/@text-cts}" file-name="{$text/@file-name}" author="{$text/@author}" title="{$text/@title}" date-of-conversion="{$text/@date-of-conversion}"> 
+ <text text-cts="{$text/@text-cts}" file-name="{$text/@file-name}" 
+  author="{$text/@author}" title="{$text/@title}" date-of-conversion="{$text/@date-of-conversion}"> 
  { 
   for tumbling window $w in $text/t
   start $s when true()
@@ -237,26 +240,4 @@ declare function lp:occurence-id-word($text as element()?) as element()?
               $a/text()}
  }
  </text>
-};
-
-(:~
- : Identify sentences
- :
- : @author  Giuseppe G. A. Celano 
- : (slightly adapting a query which Jonathan Robie gave me) 
- : @version 1.0 
- : @param   $path is the path of the folder where you have all the XML files
- : @return  the element containing an entire text with sentence split
- :)
-declare function lp:sent-identify($path as xs:string) as element()?
-{
- let $g := lp:occurence-id-word(lp:running-id-word(lp:punct-tokenize($path)))
- return
- <text text-cts="{$g/@text-cts}" file-name="{$g/@file-name}" author="{$g/@author}" title="{$g/@title}" date-of-conversion="{$g/@date-of-conversion}">{
-  for tumbling window $w in $g/t
-  start $s when fn:true()
-  only end $e when $e = (".", "·", ";", ":")
-  return
-  <s>{$w}</s>
-}</text>
 };

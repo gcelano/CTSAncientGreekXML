@@ -242,7 +242,7 @@ declare function lp:occurrence-id-word($text as element()?) as element()?
  </text>
 };
 
-(: use can invoke the preceding functions thus:
+(: you can invoke the preceding functions thus:
 
 for $i in lp:CTS-texts("/mydirectory/")
 return

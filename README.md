@@ -20,7 +20,7 @@ Each file contains the following information:
 * the optional ```@tag``` element shows some special elements which contained the given word: more precisely, the ```add```, ```del```, ```unclear```, ```surplus```, ```supplied``` and ```seg``` elements, which can be of interest to identify editorial interventions. 
 
 # Cite
-Cite the following repository thus:
+Cite the following work thus:
 
 * Giuseppe G. A. Celano. (2017). Tokenized CTSized Ancient Greek texts [Data set]. Zenodo. http://doi.org/10.5281/zenodo.401372
 

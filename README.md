@@ -1,6 +1,6 @@
 # Tokenized CTSized Ancient Greek Texts
 
-This repository contains the graphic-word tokenized texts of the following two repositories:
+This repository contains the graphic-word tokenized texts of the following two repositories (I also provide them in zipped format):
 
 * https://github.com/PerseusDL/canonical-greekLit
 * https://github.com/OpenGreekAndLatin/First1KGreek

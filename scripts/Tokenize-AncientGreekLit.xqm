@@ -241,3 +241,11 @@ declare function lp:occurence-id-word($text as element()?) as element()?
  }
  </text>
 };
+
+(: use can invoke the preceding functions thus:
+
+for $i in lp:CTS-texts("/mydirectory/")
+return
+lp:occurrence-id-word(lp:running-id-word(lp:punct-tokenize($i)))
+
+:)

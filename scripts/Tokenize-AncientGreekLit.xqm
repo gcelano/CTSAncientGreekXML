@@ -217,7 +217,7 @@ declare function lp:running-id-word($text as element()?) as element()?
  :          the XML/CTS-compliant files
  : @return  the element containing an entire text with occurrence ids. 
  :)
-declare function lp:occurence-id-word($text as element()?) as element()?
+declare function lp:occurrence-id-word($text as element()?) as element()?
 {
  <text text-cts="{$text/@text-cts}" file-name="{$text/@file-name}" 
   author="{$text/@author}" title="{$text/@title}" date-of-conversion="{$text/@date-of-conversion}"> 

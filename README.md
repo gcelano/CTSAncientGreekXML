@@ -1,5 +1,4 @@
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.401372.svg)](https://doi.org/10.5281/zenodo.401372)
 # Tokenized CTSized Ancient Greek Texts
 
 This repository contains the graphic-word tokenized texts of the following two repositories (I also provide them in zipped format):

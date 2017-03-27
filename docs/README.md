@@ -17,5 +17,10 @@ Each file contains the following information:
 * the optional ```@join``` attribute specifies whether a punctuation mark should be attached to either the preceding (b) or the following (a) word.
 * the optional ```@tag``` element shows some special elements which contained the given word: more precisely, the ```add```, ```del```, ```unclear```, ```surplus```, ```supplied``` and ```seg``` elements, which can be of interest to identify editorial interventions. 
 
+# Cite
+Cite the following work thus:
+
+* Giuseppe G. A. Celano. (2017). Tokenized CTSized Ancient Greek texts v1.1.0 [Data set]. Zenodo. http://doi.org/10.5281/zenodo.438311
+
 # License
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.

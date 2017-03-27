@@ -1,4 +1,4 @@
-# Tokenized CTSized Ancient Greek Texts
+# Tokenized CTSized Ancient Greek Texts (v1.1.0)
 
 This repository contains the graphic-word tokenized texts of the following two repositories (I also provide them in zipped format):
 

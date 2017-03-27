@@ -1,6 +1,6 @@
-xquery version "3.0" encoding "utf-8";
+xquery version "3.1" encoding "utf-8";
 
-(: This Library has been written and run with BaseX 8.6.1 by Giuseppe G. Celano.
+(: This Library has been written and run with BaseX 8.6.2 by Giuseppe G. Celano.
  : It is published under a CC BY-NC 4.0 license.     
  :)
 
@@ -106,8 +106,12 @@ let $t :=
                                       [not(./ancestor::tei:gloss)]
                                       [not(./ancestor::tei:interpGrp)]
                                       [not(./ancestor::tei:bibl)]                                      
+       (: add here elements which are relevant to cts urn structure :)
        let $ce := $sp/(ancestor::tei:div[not(@type="edition")] 
-                       union ancestor::tei:l)/@n
+                       union ancestor::tei:l
+                       union ancestor::tei:p
+                       union ancestor::tei:seg
+                      )/@n
        let $as := $sp/ (: element names appearing in @tag follow :)
        (ancestor::tei:del union ancestor::tei:add union ancestor::tei:unclear
         union ancestor::tei:supplied union ancestor::tei:surplus union 
@@ -158,8 +162,7 @@ declare function lp:punct-tokenize($path as xs:string?) as element()?
 {
  let $g := lp:space-tokenize($path)
  return
- <text text-cts="{$g/@text-cts}" file-name="{$g/@file-name}" 
-  author="{$g/@author}" title="{$g/@title}" date-of-conversion="{$g/@date-of-conversion}">
+ <text text-cts="{$g/@text-cts}" file-name="{$g/@file-name}" author="{$g/@author}" title="{$g/@title}" date-of-conversion="{$g/@date-of-conversion}">
  {
   for $t in $g//t
   let $o := $t/@tag
@@ -189,8 +192,7 @@ declare function lp:punct-tokenize($path as xs:string?) as element()?
  :)
 declare function lp:running-id-word($text as element()?) as element()?
 {
- <text text-cts="{$text/@text-cts}" file-name="{$text/@file-name}" 
-  author="{$text/@author}" title="{$text/@title}" date-of-conversion="{$text/@date-of-conversion}"> 
+ <text text-cts="{$text/@text-cts}" file-name="{$text/@file-name}" author="{$text/@author}" title="{$text/@title}" date-of-conversion="{$text/@date-of-conversion}"> 
  { 
   for tumbling window $w in $text/t
   start $s when true()
@@ -217,10 +219,9 @@ declare function lp:running-id-word($text as element()?) as element()?
  :          the XML/CTS-compliant files
  : @return  the element containing an entire text with occurrence ids. 
  :)
-declare function lp:occurrence-id-word($text as element()?) as element()?
+declare function lp:occurence-id-word($text as element()?) as element()?
 {
- <text text-cts="{$text/@text-cts}" file-name="{$text/@file-name}" 
-  author="{$text/@author}" title="{$text/@title}" date-of-conversion="{$text/@date-of-conversion}"> 
+ <text text-cts="{$text/@text-cts}" file-name="{$text/@file-name}" author="{$text/@author}" title="{$text/@title}" date-of-conversion="{$text/@date-of-conversion}"> 
  { 
   for tumbling window $w in $text/t
   start $s when true()
@@ -240,6 +241,60 @@ declare function lp:occurrence-id-word($text as element()?) as element()?
               $a/text()}
  }
  </text>
+};
+
+(:~
+ : Identify sentences
+ :
+ : @author  Giuseppe G. A. Celano 
+ : (slightly adapting a query which Jonathan Robie gave me) 
+ : @version 1.0 
+ : @param   $path is the path of the folder where you have all the XML files
+ : @return  the element containing an entire text with sentence split
+ :)
+declare function lp:sent-identify($path as xs:string) as element()?
+{
+ let $g := lp:occurence-id-word(lp:running-id-word(lp:punct-tokenize($path)))
+ return
+ <text text-cts="{$g/@text-cts}" file-name="{$g/@file-name}" author="{$g/@author}" title="{$g/@title}" date-of-conversion="{$g/@date-of-conversion}">{
+  for tumbling window $w in $g/t
+  start $s when fn:true()
+  only end $e when $e = (".", "·", ";", ":")
+  return
+  <s>{$w}</s>
+}</text>
+};
+
+(:~
+ : Identify elements which are relevant for cts urn. This function should be run 
+ : preliminary, so that relevant element names can be added in 
+ : lp:space-tokenize(). Currently they are div, l, p, and seg.
+ : To run the function use: 
+ : lp:cts-elements(lp:CTS-texts("/Users/mycomputer/Desktop/First1KGreek/data/"))
+ :
+ : @author  Giuseppe G. A. Celano 
+ : @version 1.0 
+ : @param   $cts-text as a sequence of texts as you get them from lp:CTS-texts()
+ : @return  the names of the elements (in the original XML files) relevant 
+ :          for cts urn
+ :)
+declare function lp:cts-elements($cts-text as xs:string*) as xs:string*
+{
+distinct-values(
+for $i in $cts-text 
+return 
+for $o in
+    for $u in 
+      doc($i)//*:cRefPattern/@replacementPattern 
+    return
+    replace ($u,"#xpath\(", "") => 
+    replace( "\)", "") => 
+    replace("/", " ") => 
+    replace("tei:", "") => 
+    replace ("\[.+?\]", "") 
+return
+tokenize($o, " ")[last()]
+)  
 };
 
 (: you can invoke the preceding functions thus:

@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<text text-cts="urn:cts:greekLit:tlg0013.tlg024.perseus-grc2" file-name="" author="" title="Hymn 24 To Hestia Machine readable text" date-of-conversion="2017-03-08">
-  <t p="1" n="1" a="[1]">ἑστίη</t>
-  <t p="1" n="2" a="[1]" join="b">,</t>
-  <t p="1" n="3" a="[1]">ἥτε</t>
-  <t p="1" n="4" a="[1]">ἄνακτος</t>
-  <t p="1" n="5" a="[1]">Ἀπόλλωνος</t>
-  <t p="1" n="6" a="[1]">ἑκάτοιο</t>
-  <t p="5" n="1" a="[1]">σὺν</t>
-  <t p="5" n="2" a="[1]">Διὶ</t>
-  <t p="5" n="3" a="[1]">μητιόεντι</t>
-  <t p="5" n="4" a="[1]" join="b">·</t>
-  <t p="5" n="5" a="[1]">χάριν</t>
-  <t p="5" n="6" a="[1]">δʼ</t>
-  <t p="5" n="7" a="[1]">ἅμʼ</t>
-  <t p="5" n="8" a="[1]">ὄπασσον</t>
-  <t p="5" n="9" a="[1]">ἀοιδῇ</t>
-  <t p="5" n="10" a="[1]" join="b">.</t>
+<text text-cts="urn:cts:greekLit:tlg0013.tlg024.perseus-grc2" file-name="" author="" title="Hymn 24 To Hestia Machine readable text" date-of-conversion="2017-03-27">
+  <s>
+    <t p="1" n="1" a="[1]">ἑστίη</t>
+    <t p="1" n="2" a="[1]" join="b">,</t>
+    <t p="1" n="3" a="[1]">ἥτε</t>
+    <t p="1" n="4" a="[1]">ἄνακτος</t>
+    <t p="1" n="5" a="[1]">Ἀπόλλωνος</t>
+    <t p="1" n="6" a="[1]">ἑκάτοιο</t>
+    <t p="5" n="1" a="[1]">σὺν</t>
+    <t p="5" n="2" a="[1]">Διὶ</t>
+    <t p="5" n="3" a="[1]">μητιόεντι</t>
+    <t p="5" n="4" a="[1]" join="b">·</t>
+  </s>
+  <s>
+    <t p="5" n="5" a="[1]">χάριν</t>
+    <t p="5" n="6" a="[1]">δʼ</t>
+    <t p="5" n="7" a="[1]">ἅμʼ</t>
+    <t p="5" n="8" a="[1]">ὄπασσον</t>
+    <t p="5" n="9" a="[1]">ἀοιδῇ</t>
+    <t p="5" n="10" a="[1]" join="b">.</t>
+  </s>
 </text>

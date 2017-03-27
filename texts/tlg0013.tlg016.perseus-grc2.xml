@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<text text-cts="urn:cts:greekLit:tlg0013.tlg016.perseus-grc2" file-name="" author="" title="Hymn 16 To Asclepius Machine readable text" date-of-conversion="2017-03-08">
-  <t p="1" n="1" a="[1]">ἰητῆρα</t>
-  <t p="1" n="2" a="[1]">νόσων</t>
-  <t p="1" n="3" a="[1]">Ἀσκληπιὸν</t>
-  <t p="1" n="4" a="[1]">ἄρχομʼ</t>
-  <t p="1" n="5" a="[1]">ἀείδειν</t>
-  <t p="1" n="6" a="[1]" join="b">,</t>
-  <t p="5" n="1" a="[1]">καὶ</t>
-  <t p="5" n="2" a="[1]">σὺ</t>
-  <t p="5" n="3" a="[1]">μὲν</t>
-  <t p="5" n="4" a="[1]">οὕτω</t>
-  <t p="5" n="5" a="[1]">χαῖρε</t>
-  <t p="5" n="6" a="[1]" join="b">,</t>
-  <t p="5" n="7" a="[1]">ἄναξ</t>
-  <t p="5" n="8" a="[1]" join="b">·</t>
-  <t p="5" n="9" a="[1]">λίτομαι</t>
-  <t p="5" n="10" a="[1]">δέ</t>
-  <t p="5" n="11" a="[1]">σʼ</t>
-  <t p="5" n="12" a="[1]">ἀοιδῇ</t>
-  <t p="5" n="13" a="[1]" join="b">.</t>
+<text text-cts="urn:cts:greekLit:tlg0013.tlg016.perseus-grc2" file-name="" author="" title="Hymn 16 To Asclepius Machine readable text" date-of-conversion="2017-03-27">
+  <s>
+    <t p="1" n="1" a="[1]">ἰητῆρα</t>
+    <t p="1" n="2" a="[1]">νόσων</t>
+    <t p="1" n="3" a="[1]">Ἀσκληπιὸν</t>
+    <t p="1" n="4" a="[1]">ἄρχομʼ</t>
+    <t p="1" n="5" a="[1]">ἀείδειν</t>
+    <t p="1" n="6" a="[1]" join="b">,</t>
+    <t p="5" n="1" a="[1]">καὶ</t>
+    <t p="5" n="2" a="[1]">σὺ</t>
+    <t p="5" n="3" a="[1]">μὲν</t>
+    <t p="5" n="4" a="[1]">οὕτω</t>
+    <t p="5" n="5" a="[1]">χαῖρε</t>
+    <t p="5" n="6" a="[1]" join="b">,</t>
+    <t p="5" n="7" a="[1]">ἄναξ</t>
+    <t p="5" n="8" a="[1]" join="b">·</t>
+  </s>
+  <s>
+    <t p="5" n="9" a="[1]">λίτομαι</t>
+    <t p="5" n="10" a="[1]">δέ</t>
+    <t p="5" n="11" a="[1]">σʼ</t>
+    <t p="5" n="12" a="[1]">ἀοιδῇ</t>
+    <t p="5" n="13" a="[1]" join="b">.</t>
+  </s>
 </text>

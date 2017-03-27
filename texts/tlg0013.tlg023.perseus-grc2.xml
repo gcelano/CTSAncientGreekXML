@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<text text-cts="urn:cts:greekLit:tlg0013.tlg023.perseus-grc2" file-name="" author="" title="Hymn 23 to Zeus Machine readable text" date-of-conversion="2017-03-08">
-  <t p="1" n="1" a="[1]">Ζῆνα</t>
-  <t p="1" n="2" a="[1]">θεῶν</t>
-  <t p="1" n="3" a="[1]">τὸν</t>
-  <t p="1" n="4" a="[1]">ἄριστον</t>
-  <t p="1" n="5" a="[1]">ἀείσομαι</t>
-  <t p="1" n="6" a="[1]">ἠδὲ</t>
-  <t p="1" n="7" a="[1]">μέγιστον</t>
-  <t p="1" n="8" a="[1]" join="b">,</t>
-  <t p="4" n="1" a="[1]">ἵληθʼ</t>
-  <t p="4" n="2" a="[1]" join="b">,</t>
-  <t p="4" n="3" a="[1]">εὐρύοπα</t>
-  <t p="4" n="4" a="[1]">Κρονίδη</t>
-  <t p="4" n="5" a="[2]" join="b">,</t>
-  <t p="4" n="6" a="[1]">κύδιστε</t>
-  <t p="4" n="7" a="[1]">μέγιστε</t>
-  <t p="4" n="8" a="[1]" join="b">.</t>
+<text text-cts="urn:cts:greekLit:tlg0013.tlg023.perseus-grc2" file-name="" author="" title="Hymn 23 to Zeus Machine readable text" date-of-conversion="2017-03-27">
+  <s>
+    <t p="1" n="1" a="[1]">Ζῆνα</t>
+    <t p="1" n="2" a="[1]">θεῶν</t>
+    <t p="1" n="3" a="[1]">τὸν</t>
+    <t p="1" n="4" a="[1]">ἄριστον</t>
+    <t p="1" n="5" a="[1]">ἀείσομαι</t>
+    <t p="1" n="6" a="[1]">ἠδὲ</t>
+    <t p="1" n="7" a="[1]">μέγιστον</t>
+    <t p="1" n="8" a="[1]" join="b">,</t>
+    <t p="4" n="1" a="[1]">ἵληθʼ</t>
+    <t p="4" n="2" a="[1]" join="b">,</t>
+    <t p="4" n="3" a="[1]">εὐρύοπα</t>
+    <t p="4" n="4" a="[1]">Κρονίδη</t>
+    <t p="4" n="5" a="[2]" join="b">,</t>
+    <t p="4" n="6" a="[1]">κύδιστε</t>
+    <t p="4" n="7" a="[1]">μέγιστε</t>
+    <t p="4" n="8" a="[1]" join="b">.</t>
+  </s>
 </text>

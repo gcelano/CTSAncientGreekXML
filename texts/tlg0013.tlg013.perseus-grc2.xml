@@ -1,12 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<text text-cts="urn:cts:greekLit:tlg0013.tlg013.perseus-grc2" file-name="" author="" title="Hymn 13 To Demeter Machine readable text" date-of-conversion="2017-03-08">
-  <t p="1" n="1" a="[1]">Δημήτηρ᾽</t>
-  <t p="1" n="2" a="[1]">ἠύκομον</t>
-  <t p="1" n="3" a="[1]" join="b">,</t>
-  <t p="1" n="4" a="[1]">σεμνὴν</t>
-  <t p="1" n="5" a="[1]">θεάν</t>
-  <t p="1" n="6" a="[2]" join="b">,</t>
-  <t p="1" n="7" a="[1]">ἄρχομ᾽</t>
-  <t p="1" n="8" a="[1]">ἀείδειν</t>
-  <t p="1" n="9" a="[3]" join="b">,</t>
-</text>
+<text text-cts="urn:cts:greekLit:tlg0013.tlg013.perseus-grc2" file-name="" author="" title="Hymn 13 To Demeter Machine readable text" date-of-conversion="2017-03-27"/>

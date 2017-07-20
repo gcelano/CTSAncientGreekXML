@@ -219,7 +219,7 @@ declare function lp:running-id-word($text as element()?) as element()?
  :          the XML/CTS-compliant files
  : @return  the element containing an entire text with occurrence ids. 
  :)
-declare function lp:occurence-id-word($text as element()?) as element()?
+declare function lp:occurrence-id-word($text as element()?) as element()?
 {
  <text text-cts="{$text/@text-cts}" file-name="{$text/@file-name}" author="{$text/@author}" title="{$text/@title}" date-of-conversion="{$text/@date-of-conversion}"> 
  { 
@@ -254,7 +254,7 @@ declare function lp:occurence-id-word($text as element()?) as element()?
  :)
 declare function lp:sent-identify($path as xs:string) as element()?
 {
- let $g := lp:occurence-id-word(lp:running-id-word(lp:punct-tokenize($path)))
+ let $g := lp:occurrence-id-word(lp:running-id-word(lp:punct-tokenize($path)))
  return
  <text text-cts="{$g/@text-cts}" file-name="{$g/@file-name}" author="{$g/@author}" title="{$g/@title}" date-of-conversion="{$g/@date-of-conversion}">{
   for tumbling window $w in $g/t
